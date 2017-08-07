@@ -1,0 +1,28 @@
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+      <h1>Now your result</h1>
+      <%@result %>
+    </div>
+      <div>
+        <h2>Your word: <%= @attempt %></h2>
+        <h2>Time Taken to answer: <%= @result[:time]%></h2>
+        <h2>Your score: <%= @result[:score] %></h2>
+        <h2>Message: <%= @result[:message] %></h2>
+      </div>
+  </div>
+</div>
+<!-- puts "******** Now your result ********"
+
+result = run_game(attempt, grid, start_time, end_time)
+
+puts "Your word: #{attempt}"
+puts "Time Taken to answer: #{result[:time]}"
+puts "Your score: #{result[:score]}"
+puts "Message: #{result[:message]}"
+
+puts "*****************************************************"
+ -->

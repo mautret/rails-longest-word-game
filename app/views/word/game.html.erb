@@ -1,0 +1,35 @@
+<!-- <h1>Word#game</h1>
+
+<h1>"******** Welcome to the longest word-game!********"</h1>
+ <h2>Here is your grid:</h2>
+
+<%= @display_grid %>
+
+<h1>"*****************************************************"</h1>
+
+<h2>"What's your best shot?"</h2>
+
+attempt = gets.chomp -->
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+      <% @start_time %>
+      <h1>Welcome to the longest word-game!********</h1>
+        <h2>Here is your grid:</h2>
+
+          <%= @display_grid %>
+
+
+        <form action="/score" method="get">
+          <input type="hidden" name="grid" value="<%= @display_grid %>" >
+          <input type="hidden" name="start_time" value="<%= @start_time %>" >
+          <input type="text" name="attempt" placeholder="What's your best shot?" class="form-control">
+          <button type="submit" id ="bouton" class="btn btn-primary">Go on!</button>
+        </form>
+    </div>
+  </div>
+</div>
+
+
